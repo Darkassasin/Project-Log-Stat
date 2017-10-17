@@ -2,20 +2,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { AppComponent } from './app.component';
-import {EmbedobjModule} from './embed-obj/embed-obj.module';
+import {PdfViewerComponent} from 'ng2-pdf-viewer';
+import { EmbedobjComponent } from './embed-obj.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    EmbedobjComponent,
+    PdfViewerComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
-    EmbedobjModule
+    HttpModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  exports : [EmbedobjComponent]
 })
-export class AppModule { }
+export class EmbedobjModule { }
