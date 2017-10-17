@@ -12,5 +12,5 @@ import { Component, Input } from '@angular/core';
 export class EmbedobjComponent{
   @Input() objSrc:string;
   
-  // pdfSrc="http://103.69.124.122:8080/doi/service/v1/application/get-temp-uploads?fileName=d91319bf3a27d9337c10036b32afb09ea840bd0845267befa6191356479c45d1.pdf";
+  // pdfSrc="http://192.168.50.138:8080/doi/service/v1/application/get-temp-uploads?fileName=c8b59a645b0e19920edd0208c4d0c8b099aee0419837e51ac76a1bb2e06038c6.pdf";
 }
